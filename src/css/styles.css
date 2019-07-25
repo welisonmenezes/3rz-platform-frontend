@@ -989,6 +989,9 @@ div.form-control input{
     text-transform: uppercase;
     color: #2a5454;
 }
+.user-actions-box .bank-data{
+    padding-left: 20px;
+}
 
 .copy-field p{
     color: #2a5454;
