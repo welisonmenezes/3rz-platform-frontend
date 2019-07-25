@@ -111,7 +111,7 @@
 				elements[i].addEventListener('click', function(event) {
 					event.stopPropagation();
 					detail.classList.add('opened');
-					detail.style.top = event.target.offsetTop + 'px';
+					detail.style.top = event.target.parentElement.parentElement.offsetTop + 'px';
 				});
 			}
 		}

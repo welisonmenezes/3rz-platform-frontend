@@ -97,7 +97,8 @@ h1,h2,h3,h4,h5,h6,p,div,figure,table,ul,ol{
 
 .nice-trasition-all,
 .btn-nav:before,
-.sct-header.scrolled:after{
+.sct-header.scrolled:after,
+.table img{
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
@@ -309,6 +310,7 @@ div.form-control input{
 }
 .btn-simple:hover{
     text-decoration: underline;
+    color: #7dbdb9;
 }
 .btn-simple:active,
 .btn-simple:focus{
@@ -404,6 +406,10 @@ div.form-control input{
     width: 18px;
     max-width: none;
     vertical-align: middle;
+}
+.table img:focus,
+.table img:hover{
+    transform: scale(1.1);
 }
 .table td,
 .table thead th{
@@ -977,6 +983,11 @@ div.form-control input{
 }
 .user-actions-box .btn{
     min-width: 210px;
+}
+.user-actions-box .form-control{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2a5454;
 }
 
 .copy-field p{
