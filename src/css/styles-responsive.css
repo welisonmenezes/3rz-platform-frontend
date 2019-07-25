@@ -1,0 +1,268 @@
+@media (max-width: 1400px){
+
+	.sct-header .row-menu .col-md-1 {
+	    -ms-flex: 0 0 15%;
+	    flex: 0 0 15%;
+	    max-width: 15%;
+	}
+	.sct-header .container-fluid{
+		max-width: 96%;
+	}
+}
+
+
+.show-992{
+	display: none;
+}
+@media (max-width: 992px){
+
+	.show-992{
+		display: block !important;
+	}
+	.hide-992{
+		display: none !important;
+	}
+
+	.wrap-all{
+		overflow: hidden;
+	}
+	
+	.wrap-table {
+		padding-bottom: 35px;
+	}
+
+	.col-header-opts{
+		position: fixed;
+		top: 50px;
+		right: 10px;
+		z-index: 998;
+		width: 50% !important;
+	}
+
+	.title-icon button{
+		display: inline-block;
+	}
+	
+
+	.form-filter .row-form{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 600px;
+		padding-top: 20px;
+	}
+	.form-filter .row-form > div{
+		width: 100%;
+		-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    margin-bottom: 20px;
+	}
+	.form-filter .row-form .col-2{
+		text-align: center;
+	}
+	.form-filter .row-form .title-icon{
+		text-align: center;
+	}
+	
+	
+	.mbl-ligth-box,
+	.sct-header .row-menu{
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 999;
+		width: 100%;
+		background: #f5f5f5;
+		display: block;
+		height: 100vh;
+	}
+
+	.mbl-ligth-box{
+		top: -200%;
+		visibility: hidden;
+	}
+	.mbl-ligth-box.opened{
+		top: 0;
+		visibility: visible;
+	}
+
+	
+	.registered-banks-wrap{
+		max-width: none;
+	}
+
+
+	.form-user-data{
+		margin-bottom: 35px;
+	}
+
+
+	.sct-header .row-menu{
+		right: -100%;
+		left: auto;
+		width: 45%;
+		padding-top: 125px;
+	}
+	.sct-header .row-menu .row{
+		display: block;
+		margin: 0 30px;
+	}
+	.sct-header .row-menu .row > div{
+		display: block;
+		width: 100%;
+		-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    padding: 0;
+	    margin-bottom: 30px;
+	}
+	.sct-header.opened .row-menu{
+		right: 0;
+	}
+	.sct-header.opened .ul-header-opts .wm-dropdown-label{
+		background: transparent;
+	}
+
+
+	.sct-main .form-filter{
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+.show-576{
+	display: none;
+}
+@media (max-width: 576px){
+
+	body{
+		padding: 0;
+	}
+
+	.show-576{
+		display: block !important;
+	}
+	.hide-576{
+		display: none !important;
+	}
+
+	.box-logo{
+		max-width: 118px;
+	}
+
+	.col-header-opts{
+		top: 38px;
+		right: 25px;
+	}
+
+	.ul-header-opts > li:last-child{
+		min-width: 40px;
+	}
+
+	.balance-info{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.balance-percents li{
+		padding: 0 10px;
+	}
+
+	.balance-actions .btn{
+		width: 140px;
+	}
+
+	.balance-bordered{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	.wrap-all{
+		padding-top: 120px;
+	}
+	.sct-header{
+		height: 119px;
+	}
+	.sct-header:after{
+		height: 118px;
+	}
+	.sct-header .row-menu{
+		width: 80%;
+	}
+	.sct-header.scrolled{
+		height: 89px;
+	}
+	.sct-header.scrolled:after{
+		height: 88px;
+	}
+	.sct-header.scrolled .box-logo{
+		max-width: 80px;
+	}
+	.sct-header.scrolled .col-header-opts{
+		top: 24px;
+	}
+
+	.sct-main{
+		padding-top: 40px;
+	}
+	.sct-main .balance-box .row{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.sct-main .balance-box .row > div{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.sct-main .balance-box{
+		margin-bottom: 60px;
+	}
+
+
+	.sct-my-account .row-balance{
+		margin-bottom: 35px;
+	}
+
+}
+
+
+
+@media (max-width: 430px){
+	.balance-info{
+		padding-top: 10px;
+		white-space: nowrap;
+	}
+	.balance-info h4{
+		font-size: 16px;
+	}
+	.balance-info p{
+		font-size: 20px;
+	}
+	.balance-actions .btn{
+		width: 100px;
+		font-size: 14px;
+		padding: 0;
+	}
+
+	.detail-item{
+		padding: 40px 30px;
+	}
+	.detail-item .balance-data p{
+		font-size: 26px;
+	}
+}
+
+
+
+@media (max-width: 340px){
+	.box-logo{
+		max-width: 100px;
+		margin-top: 7px;
+	}
+
+	.sct-header.scrolled .box-logo{
+		max-width: 65px;
+	}
+}

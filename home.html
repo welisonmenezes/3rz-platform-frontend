@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>3RZ</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="icon" href="src/img/favicon.png"> -->
+	<link rel="stylesheet" href="src/libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="src/css/styles.css">
+	<link rel="stylesheet" href="src/css/styles-responsive.css">
+</head>
+<body>
+	
+	<div class="wrap-all">
+
+		<header class="sct-header nice-trasition-all" id="sct-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2">
+						<a href="#" class="box-logo nice-trasition-all" title="3RZ">
+							<img src="src/img/logo-3rz.png" alt="Logo 3RZ">
+						</a>
+					</div>
+					<div class="col-md-10 row-menu nice-trasition-all">
+
+						<div class="row justify-content-end">
+							<div class="col-md-3">
+								<span class="btn btn-block gradient-border">
+									<a href="#" class="btn btn-gradient gradient-bg btn-block" title="Buy &amp; Sell">Buy &amp; Sell</a>
+								</span>
+							</div>
+							<div class="col-md-3">
+								<div class="wm-dropdown gradient-border" tabindex="0">
+									<div class="wm-dropdown-label">Deposit</div>
+									<ul class="wm-dropdown-opts gradient-border">
+										<li class="wm-dropdown-item dynamic-tabindex" tabindex="-2">BRL</li>
+										<li class="wm-dropdown-item dynamic-tabindex" tabindex="-2">BRZ</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="wm-dropdown gradient-border" tabindex="0">
+									<div class="wm-dropdown-label">Withdrawal</div>
+									<ul class="wm-dropdown-opts gradient-border">
+										<li class="wm-dropdown-item dynamic-tabindex" tabindex="-2">BRL</li>
+										<li class="wm-dropdown-item dynamic-tabindex" tabindex="-2">BRZ</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-1">
+								<a href="#" class="btn btn-nav" title="History">History</a>
+							</div>
+							<div class="col-md-2 col-header-opts nice-trasition-all">
+								<ul class="ul-header-opts nice-trasition-all">
+									<li>
+										<div class="wm-dropdown" tabindex="0">
+											<div class="wm-dropdown-label">PT</div>
+											<ul class="wm-dropdown-opts gradient-border">
+												<li class="wm-dropdown-item">
+													<a href="#" class="dynamic-tabindex" title="EN" tabindex="-2">EN</a>
+												</li>
+												<li class="wm-dropdown-item">
+													<a href="#" class="dynamic-tabindex" title="PT" tabindex="-2">PT</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="wm-dropdown with-icon" tabindex="0">
+											<div class="wm-dropdown-label">
+												<img src="src/img/icons/user.svg" alt="icon user">
+											</div>
+											<ul class="wm-dropdown-opts gradient-border">
+												<li class="wm-dropdown-item">
+													<a href="#" class="dynamic-tabindex" title="My Account" tabindex="-2">My Account</a>
+												</li>
+												<li class="wm-dropdown-item">
+													<a href="#" class="dynamic-tabindex" title="Contact/Help" tabindex="-2">Contact/Help</a>
+												</li>
+												<li class="wm-dropdown-item">
+													<a href="#" class="dynamic-tabindex" title="Sign Out" tabindex="-2">Sign Out</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="show-992">
+										<div class="btn-menu-mbl toggle-mbl-menu" tabindex="0">
+											<span class="hamburguer"></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="sct-main sct-home">
+			<div class="container-fluid">
+
+				<div class="balance-box container-small">
+					<div class="row justify-content-center text-center">
+						<div class="col-6">
+							<div class="balance-info">
+								<h4>Real Balance</h4>
+								<p>50.000,00</p>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="balance-info brz">
+								<h4>BRZ Balance</h4>
+								<p>52.000,00</p>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center text-center">
+						<div class="col-12">
+							<div class="gradient-border radius nice-input-wrap">
+								<input type="text" class="nice-input" placeholder="AMOUNT">
+								<img src="src/img/icons/ok.svg" alt="ok">
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center text-center">
+						<div class="col-12">
+							<ul class="balance-percents">
+								<li>
+									<label class="hidden-input nice-trasition-all" tabindex="0">
+										<input type="radio" name="test1" value="25%"  tabindex="-1">
+										<span class="label">25%</span>
+									</label>
+								</li>
+								<li>
+									<label class="hidden-input nice-trasition-all" tabindex="0">
+										<input type="radio" name="test1" value="50%" tabindex="-1">
+										<span class="label">50%</span>
+									</label>
+								</li>
+								<li>
+									<label class="hidden-input nice-trasition-all" tabindex="0">
+										<input type="radio" name="test1" value="75%" tabindex="-1">
+										<span class="label">75%</span>
+									</label>
+								</li>
+								<li>
+									<label class="hidden-input nice-trasition-all" tabindex="0">
+										<input type="radio" name="test1" value="100%" tabindex="-1">
+										<span class="label">100%</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row justify-content-center text-center balance-actions">
+						<button type="button" class="btn btn-secondary">Buy BRZ</button>
+						<button type="button" class="btn btn-primary">Sell BRZ</button>
+					</div>
+				</div>
+
+				<div class="form-filter container-medium">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="title-icon">
+								<h2 class="nice-title">History</h2>
+								<button type="button" class="btn-filter nice-trasition-all toggle-filter-form"></button>
+							</div>
+						</div>
+					</div>
+					<div class="mbl-ligth-box nice-trasition-all">
+						<div class="row row-form">
+							<div class="col-3">
+								<div class="title-icon show-992">
+									<h2 class="nice-title">History</h2>
+									<button type="button" class="btn-filter nice-trasition-all toggle-filter-form"></button>
+								</div>
+								<div class="wm-dropdown gradient-border" tabindex="0">
+									<div class="wm-dropdown-label">All Currency</div>
+									<ul class="wm-dropdown-opts gradient-border">
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">BRZ</span>
+											</label>
+										</li>
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">REAL</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="wm-dropdown gradient-border" tabindex="0">
+									<div class="wm-dropdown-label">All Type</div>
+									<ul class="wm-dropdown-opts gradient-border">
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">Buy</span>
+											</label>
+										</li>
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">Sell</span>
+											</label>
+										</li>
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">Deposit</span>
+											</label>
+										</li>
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">Withdrawal</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="wm-dropdown gradient-border" tabindex="0">
+									<div class="wm-dropdown-label">All Status</div>
+									<ul class="wm-dropdown-opts gradient-border">
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">Completed</span>
+											</label>
+										</li>
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">Pending</span>
+											</label>
+										</li>
+										<li class="wm-dropdown-item">
+											<label class="wm-custom-checkbox dynamic-tabindex" tabindex="-2">
+												<input type="checkbox" value="" tabindex="-1">
+												<span class="checkmark"></span>
+												<span class="label">Denied</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-2">
+								<button type="button" class="btn btn-primary">Filtrar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="table-box container-medium">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="wrap-table nice-scrollbar">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Type</th>
+											<th>Currency/Pair</th>
+											<th>Amount</th>
+											<th>Price</th>
+											<th>Fee%</th>
+											<th>Status</th>
+											<th>Total</th>
+											<th>&nbsp;</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr tabindex="0" class="on-show-detail">
+											<td>12/06/2019</td>
+											<td>Withdrawal</td>
+											<td>Real</td>
+											<td>50.000,00</td>
+											<td>1</td>
+											<td>0%</td>
+											<td>Completed</td>
+											<td>50.000,00</td>
+											<td><img src="src/img/icons/report.svg" alt="icon report"></td>
+										</tr>
+										<tr tabindex="0" class="pending on-show-detail">
+											<td>12/06/2019</td>
+											<td>Withdrawal</td>
+											<td>Real</td>
+											<td>50.000,00</td>
+											<td>1</td>
+											<td>0%</td>
+											<td>Completed</td>
+											<td>50.000,00</td>
+											<td><img src="src/img/icons/report-pending.svg" alt="icon report"></td>
+										</tr>
+										<tr tabindex="0" class="on-show-detail">
+											<td>12/06/2019</td>
+											<td>Withdrawal</td>
+											<td>Real</td>
+											<td>50.000,00</td>
+											<td>1</td>
+											<td>0%</td>
+											<td>Completed</td>
+											<td>50.000,00</td>
+											<td><img src="src/img/icons/report.svg" alt="icon report"></td>
+										</tr>
+										<tr tabindex="0" class="on-show-detail">
+											<td>12/06/2019</td>
+											<td>Withdrawal</td>
+											<td>Real</td>
+											<td>50.000,00</td>
+											<td>1</td>
+											<td>0%</td>
+											<td>Completed</td>
+											<td>50.000,00</td>
+											<td><img src="src/img/icons/report.svg" alt="icon report"></td>
+										</tr>
+										<tr tabindex="0" class="denied on-show-detail">
+											<td>12/06/2019</td>
+											<td>Withdrawal</td>
+											<td>Real</td>
+											<td>50.000,00</td>
+											<td>1</td>
+											<td>0%</td>
+											<td>Completed</td>
+											<td>50.000,00</td>
+											<td><img src="src/img/icons/report-denied.svg" alt="icon report"></td>
+										</tr>
+										<tr tabindex="0" class="on-show-detail">
+											<td>12/06/2019</td>
+											<td>Withdrawal</td>
+											<td>Real</td>
+											<td>50.000,00</td>
+											<td>1</td>
+											<td>0%</td>
+											<td>Completed</td>
+											<td>50.000,00</td>
+											<td><img src="src/img/icons/report.svg" alt="icon report"></td>
+										</tr>
+										<tr tabindex="0" class="on-show-detail">
+											<td>12/06/2019</td>
+											<td>Withdrawal</td>
+											<td>Real</td>
+											<td>50.000,00</td>
+											<td>1</td>
+											<td>0%</td>
+											<td>Completed</td>
+											<td>50.000,00</td>
+											<td><img src="src/img/icons/report.svg" alt="icon report"></td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<div class="detail-item-wrap">
+									<div class="detail-item-border gradient-border radius">
+										<div class="detail-item radius">
+											<button type="button" class="btn-close nice-trasition-all on-close-detail"></button>
+											<div class="content-border gradient-border">
+												<div class="content">
+													<h2>Withdrawal</h2>
+													<div class="info-data">
+														<span class="date">04/07/2019</span>
+														<spna class="id">id 1458</spna>
+													</div>
+													<div class="balance-data">
+														<h3>Amount</h3>
+														<p>50.000,00 BRL</p>
+													</div>
+													<div class="bank-data">
+														<p>Bank:  341 - Itaú</p>
+														<p>Social name:  Throruss LTDA</p>
+														<p>Agency: 1500</p>
+														<p>Account:  05201-2</p>
+													</div>
+												</div>
+											</div>
+											<button type="button" class="btn-download nice-trasition-all">Download</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row row-paginate">
+						<div class="col-md-12 text-center">
+							<button type="button" class="btn btn-primary">More History</button>
+							<div class="loading-box">
+								<img src="src/img/loading.gif" alt="loading...">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<footer class="sct-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+							<a href="#" class="btn btn-nav" title="Contact/Help">Contact/Help</a>
+						</p>
+						<p>
+							<small>
+								Copyright &copy; 2019 3RZ. Todos os direitos reservados.
+							</small>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<script src="src/js/app.js"></script>
+</body>
+</html>
