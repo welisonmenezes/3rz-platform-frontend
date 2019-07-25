@@ -114,6 +114,14 @@ h1,h2,h3,h4,h5,h6,p,div,figure,table,ul,ol{
     border-radius: .25rem;
 }
 
+.p-relative{
+    position: relative;
+}
+
+.word-break{
+    word-break: break-all;
+}
+
 input::-webkit-input-placeholder {
     color: #8f979e;
 }
@@ -142,6 +150,18 @@ select.form-control {
   -moz-appearance: none;
    -webkit-appearance: none;
    appearance: none;
+}
+textarea.form-control{
+    min-height: 194px;
+}
+div.form-control{
+    position: relative;
+    overflow: hidden;
+}
+div.form-control input{
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
 }
 
 .wrap-all{
@@ -305,6 +325,9 @@ select.form-control {
 .nice-title:before{
     left: 0;
 }
+.nice-title.small{
+    font-size: 18px;
+}
 
 .btn-menu-mbl{
     height: 40px;
@@ -362,6 +385,9 @@ select.form-control {
 .wrap-table .table{
     min-width: 900px;
 }
+.wrap-table .table.small{
+    min-width: 400px;
+}
 .wrap-table .detail-item-wrap{
     width: 100%;
     position: absolute;
@@ -376,6 +402,7 @@ select.form-control {
 .table img{
     display: inline-block;
     width: 18px;
+    max-width: none;
     vertical-align: middle;
 }
 .table td,
@@ -474,8 +501,35 @@ select.form-control {
     padding-left: 15px;
     margin-bottom: 20px;
 }
+.detail-item .content.no-margin{
+    margin-bottom: 0;
+}
 .detail-item .btn-download{
     margin-left: 20px;
+}
+.detail-item .status-info{
+    margin-bottom: 25px;
+}
+
+.status-info{
+    font-size: 16px;
+    color: #8ed2d1;
+}
+.status-info h4{
+    font-weight: 500;
+    font-size: 16px;
+}
+.status-info.pending{
+    color: #fbc270;
+}
+.status-info.denied{
+    color: #fc8c80;
+}
+
+.text-copy-successfully{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #8ed2d1;
 }
 
 .wm-dropdown{
@@ -886,6 +940,7 @@ select.form-control {
 .wm-tab-header{
     margin-bottom: 10px;
     display: inline-block;
+    cursor: pointer;
 }
 .wm-tab-header h4{
     display: inline-block;
@@ -907,9 +962,33 @@ select.form-control {
     height: auto;
 }
 
+.doubts-box{
+    height: 315px;
+    overflow-x: auto;
+    padding-right: 15px;
+}
+
 .ul-doubts > li{
     margin-bottom: 10px;
 }
+
+.user-actions-box > div{
+    margin-bottom: 20px;
+}
+.user-actions-box .btn{
+    min-width: 210px;
+}
+
+.copy-field p{
+    color: #2a5454;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.fig-qrcode img{
+    margin: 0 auto;
+}
+
 
 
 
@@ -924,6 +1003,10 @@ select.form-control {
 
 .form-add-bank{
     padding-top: 30px;
+}
+
+.form-support .action{
+    padding-top: 25px;
 }
 
 .form-filter .title-icon{
@@ -996,7 +1079,6 @@ select.form-control {
     max-width: 22%;
 }
 
-
 .sct-main{
     padding: 140px 0 80px 0;
 }
@@ -1033,6 +1115,16 @@ select.form-control {
 }
 .sct-my-account .row-balance{
     margin-bottom: 70px;
+}
+
+.sct-deposit{
+    padding-top: 75px;
+}
+.sct-deposit .nice-title{
+    margin-bottom: 25px;
+}
+.sct-deposit .col-right{
+    padding-top: 56px;
 }
 
 .sct-footer{

@@ -86,11 +86,18 @@
 		visibility: visible;
 	}
 
+	.user-actions-box{
+		margin-bottom: 50px;
+	}
+
 	
 	.registered-banks-wrap{
 		max-width: none;
 	}
-
+	
+	.doubts-box{
+		margin-bottom: 40px;
+	}
 
 	.form-user-data{
 		margin-bottom: 35px;
@@ -223,6 +230,10 @@
 
 	.sct-my-account .row-balance{
 		margin-bottom: 35px;
+	}
+
+	.sct-deposit .col-right{
+		padding-top: 0;
 	}
 
 }

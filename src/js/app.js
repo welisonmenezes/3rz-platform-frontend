@@ -174,4 +174,46 @@
 	}
 	wmTab();
 
+	function copyDepositAddress() {
+		var elements = document.querySelectorAll('.on-copy-input');
+		var total = elements.length;
+		if (total) {
+			for (var i = 0; i < total; i++) {
+				elements[i].addEventListener('click', function(event) {
+					event.stopPropagation();
+					var idInput = this.getAttribute('data-target');
+					if(idInput) {
+						var copyText = document.getElementById('depositAddress');
+						if(copyText){
+							removeElementsByClass('.text-copy-successfully');
+							copyText.select();
+							document.execCommand('copy');
+							createElement('P', 'successfully copied', 'text-copy-successfully', this);
+						}
+						
+					}
+				});
+			}
+		}
+	}
+	copyDepositAddress();
+
+	function removeElementsByClass(classValue) {
+		var elements = document.querySelectorAll(classValue);
+		var total = elements.length;
+		if (total) {
+			for (var i = 0; i < total; i++) {
+				elements[i].parentElement.removeChild(elements[i]);
+			}
+		}
+	}
+
+	function createElement(element, text, classValue, parent) {
+		var node = document.createElement(element);
+		node.setAttribute('class', classValue);
+		var textnode = document.createTextNode(text);
+		node.appendChild(textnode);
+		parent.parentElement.appendChild(node);
+	}
+
 })();
