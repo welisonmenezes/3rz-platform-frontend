@@ -87,7 +87,8 @@ h1,h2,h3,h4,h5,h6,p,div,figure,table,ul,ol{
 
 .gradient-bg,
 .sct-header:after,
-.balance-info:before{
+.balance-info:before,
+.sct-statement .detail-item:before{
     background: #c6e9c0;
     background: -moz-linear-gradient(top,  #c6e9c0 0%, #92d3d0 100%);
     background: -webkit-linear-gradient(top,  #c6e9c0 0%,#92d3d0 100%);
@@ -335,6 +336,25 @@ div.form-control input{
     height: 40px;
 }
 
+.alert{
+    background: transparent !important;
+    font-size: 14px;
+}
+.alert h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.alert p{
+    line-height: 18px;
+}
+.alert-primary{
+    background: #7fcbcb;
+    color: #7fcbcb;
+    border-color: #7fcbcb;
+}
+
 .hamburguer {
     position: relative;
     display: block;
@@ -447,6 +467,16 @@ div.form-control input{
     margin-bottom: 4px;
 }
 
+.content-border{
+    padding: 0 0 0 2px;
+}
+.content-border .content{
+    background: #fff;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-left: 15px;
+}
+
 .detail-item-wrap{
     width: 100%;
     height: 0px;
@@ -487,7 +517,8 @@ div.form-control input{
     font-size: 15px;
     color: #3d5654;
 }
-.detail-item .balance-data{
+.detail-item .balance-data,
+.detail-item .after-data{
     margin-bottom: 15px;
 }
 .detail-item .balance-data p{
@@ -499,12 +530,7 @@ div.form-control input{
     top: 20px;
     right: 20px;
 }
-.detail-item .content-border{
-    padding: 0 0 0 2px;
-}
 .detail-item .content{
-    background: #fff;
-    padding-left: 15px;
     margin-bottom: 20px;
 }
 .detail-item .content.no-margin{
@@ -515,6 +541,33 @@ div.form-control input{
 }
 .detail-item .status-info{
     margin-bottom: 25px;
+}
+
+.detail-item.outside{
+    background: transparent;
+    position: relative;
+    padding: 0 0 0 15px;
+}
+.detail-item.outside h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.detail-item.outside h3{
+    font-size: 16px;
+}
+.detail-item.outside:before{
+    content: "";
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.detail-item.outside .content{
+    background: transparent;
+}
+.detail-item.outside .balance-data{
+    margin-bottom: 5px;
 }
 
 .status-info{
@@ -1139,6 +1192,20 @@ div.form-control input{
 }
 .sct-deposit .col-right{
     padding-top: 56px;
+}
+
+.sct-statement{
+    padding: 110px 0 210px 0;
+}
+.sct-statement .detail-item{
+    margin-bottom: 35px;
+}
+.sct-statement .actions a{
+    margin: 0 15px;
+}
+.sct-statement .nice-title,
+.sct-statement .alert{
+    margin-bottom: 30px;
 }
 
 .sct-footer{
