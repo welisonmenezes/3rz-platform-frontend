@@ -1181,11 +1181,16 @@ div.form-control input{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.form-register .action p{
+.form-register .action p,
+.form-recover .action p{
     padding-top: 15px;
 }
 .form-register .btn{
     min-width: 210px;
+}
+
+.form-recover .action{
+    padding-top: 15px;
 }
 
 
@@ -1313,6 +1318,11 @@ div.form-control input{
 }
 .sct-confirmation .nice-title{
     margin-bottom: 30px;
+}
+
+.sct-register,
+.sct-login{
+    padding-top: 100px;
 }
 
 .sct-login .nice-title,
