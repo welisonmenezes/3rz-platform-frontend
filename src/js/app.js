@@ -223,19 +223,25 @@
 			for (var i = 0; i < total; i++) {
 				elements[i].addEventListener('keyup', function(event) {
 					event.stopPropagation();
-					if(this.value.length > 0) {
+					if(this.value.length > 0 && isEspecialKeys(event)) {
 						this.nextElementSibling.focus();
 					} 
 				});
 				elements[i].addEventListener('keydown', function(event) {
 					event.stopPropagation();
 					if(this.value.length > 0) {
-						this.value = '';
+						if(isEspecialKeys(event)) {
+							this.value = '';
+						}
 					} 
 				});
 			}
 		}
 	}
 	jumpOutInputAuth();
+
+	function isEspecialKeys(event) {
+		return event.key !== 'Tab' && event.key !== 'Shift';
+	}
 
 })();
