@@ -350,6 +350,9 @@ div.form-control input{
 .nice-title.small{
     font-size: 18px;
 }
+.nice-title.no-upercase{
+    text-transform: none;
+}
 
 .btn-menu-mbl{
     height: 40px;
@@ -1055,6 +1058,9 @@ div.form-control input{
 
 .text-green{
     color: #8ed2d1;
+}
+.text-green.brz{
+    color: #9acaab;
 }
 .text-red{
     color: #fc8c80;
