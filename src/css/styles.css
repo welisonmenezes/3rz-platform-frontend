@@ -85,6 +85,9 @@ h1,h2,h3,h4,h5,h6,p,div,figure,table,ul,ol{
     width: 2px;
     display: block;
 }
+.gradient-border.error{
+    background: #fc8c80;
+}
 
 .gradient-bg,
 .sct-header:after,
@@ -814,6 +817,14 @@ div.form-control input{
 .wm-custom-checkbox a{
     color: #bd8784;
 }
+.wm-custom-radio.error .label,
+.wm-custom-checkbox.error .label{
+    color: #fc8c80;
+}
+.wm-custom-radio.error .checkmark,
+.wm-custom-checkbox.error .checkmark{
+    border-color: #fc8c80;
+}
 
 .fields-auth{
     display: flex;
@@ -1147,6 +1158,13 @@ div.form-control input{
 
 
 
+.msg-error{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fc8c80;
+    display: inline-block;
+    padding: 0 .75rem;
+}
 
 .form-default .form-group{
     margin-bottom: 10px;
