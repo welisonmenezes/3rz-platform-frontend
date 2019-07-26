@@ -264,6 +264,11 @@
 	.detail-item .balance-data p{
 		font-size: 26px;
 	}
+
+	.fields-auth .field-auth{
+		padding: 10px;
+		font-size: 26px;
+	}
 }
 
 

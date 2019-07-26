@@ -216,4 +216,26 @@
 		parent.parentElement.appendChild(node);
 	}
 
+	function jumpOutInputAuth() {
+		var elements = document.querySelectorAll('.field-auth');
+		var total = elements.length;
+		if (total) {
+			for (var i = 0; i < total; i++) {
+				elements[i].addEventListener('keyup', function(event) {
+					event.stopPropagation();
+					if(this.value.length > 0) {
+						this.nextElementSibling.focus();
+					} 
+				});
+				elements[i].addEventListener('keydown', function(event) {
+					event.stopPropagation();
+					if(this.value.length > 0) {
+						this.value = '';
+					} 
+				});
+			}
+		}
+	}
+	jumpOutInputAuth();
+
 })();
