@@ -116,6 +116,9 @@ h1,h2,h3,h4,h5,h6,p,div,figure,table,ul,ol{
 .radius{
     border-radius: .25rem;
 }
+.no-padding{
+    padding: 0 !important;
+}
 
 .p-relative{
     position: relative;
@@ -224,6 +227,21 @@ div.form-control input{
 .btn-nav:focus:before{
     width: 100%;
     left: 0;
+}
+.btn-nav.link{
+    color: #7dbdb9;
+    font-size: 16px;
+    padding: 0;
+}
+.btn-nav.link:before{
+    display: none;
+}
+.btn-nav.link:hover{
+    text-decoration: underline;
+}
+.btn-nav.link:active,
+.btn-nav.link:focus{
+    transform: scale(1.1);
 }
 
 .btn-primary,
@@ -1266,6 +1284,23 @@ div.form-control input{
 }
 .sct-confirmation .nice-title{
     margin-bottom: 30px;
+}
+
+.sct-login .nice-title{
+    margin-bottom: 30px;
+}
+.sct-login form{
+    margin-bottom: 35px;
+}
+.sct-login .btn{
+    min-width: 210px;
+}
+.sct-login .action{
+    padding-top: 15px;
+}
+.sct-login p{
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .sct-footer{
