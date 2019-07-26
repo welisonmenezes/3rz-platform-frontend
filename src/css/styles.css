@@ -670,6 +670,7 @@ div.form-control input{
 .wm-dropdown-item .wm-custom-checkbox,
 .wm-dropdown-item .wm-custom-radio{
     display: block;
+    height: auto;
 }
 .wm-dropdown-item .wm-custom-radio .checkmark,
 .wm-dropdown-item .wm-custom-checkbox .checkmark{
@@ -702,7 +703,8 @@ div.form-control input{
 .wm-custom-radio,
 .wm-custom-checkbox{
     position: relative;
-    padding-right: 25px;
+    padding-right: 17px;
+    height: 17px;
     cursor: pointer;
     margin-bottom: 0;
 }
@@ -746,6 +748,16 @@ div.form-control input{
     height: 17px;
     width: 17px;
     background-color: #fff;   
+}
+.wm-custom-radio.right,
+.wm-custom-checkbox.right{
+    padding-left: 25px;
+    padding-right: 0;
+}
+.wm-custom-radio.right .checkmark,
+.wm-custom-checkbox.right .checkmark{
+    left: 0;
+    right: auto;
 }
 .wm-custom-radio .checkmark:after{
     content: "";
@@ -1159,6 +1171,17 @@ div.form-control input{
 }
 
 
+.form-register .row-accept{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.form-register .action p{
+    padding-top: 15px;
+}
+.form-register .btn{
+    min-width: 210px;
+}
+
 
 
 
@@ -1286,7 +1309,8 @@ div.form-control input{
     margin-bottom: 30px;
 }
 
-.sct-login .nice-title{
+.sct-login .nice-title,
+.sct-register .nice-title{
     margin-bottom: 30px;
 }
 .sct-login form{
